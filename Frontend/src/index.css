@@ -2,11 +2,13 @@
   margin: 0;
   padding:0;
   box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-html,body, #root{
+html, body, #root {
   height: 100%;
   width: 100%;
- background: linear-gradient(to bottom, #f6d7d0, #2b1b64);
-  
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-attachment: fixed;
+  color: white;
 }

@@ -56,7 +56,7 @@ const MoodDetector = ({ setSongs }) => {
           .get(`http://localhost:3000/songs?mood=${mood}`)
           .then((response) => {
             console.log(response.data);
-            setSongs(response.data?.songs || []);
+            setSongs(response.data?.song || []);
           })
           .catch((err) => console.error(err));
       }
@@ -64,12 +64,24 @@ const MoodDetector = ({ setSongs }) => {
   };
 
   return (
-    <div className="mood-element">
-      <h2 className="text-xl font-bold mb-4">Mood: {currentMood}</h2>
-      <video ref={videoRef} autoPlay muted className="user-video-feed" />
+    <div className="mood-element flex flex-col items-center gap-4 p-6 rounded-2xl bg-white/10 backdrop-blur-md shadow-lg max-w-sm">
+  <h2 className="text-2xl font-bold text-white">Mood: {currentMood}</h2>
 
-      <button onClick={detectMood}>Detect Face</button>
-    </div>
+  <video
+    ref={videoRef}
+    autoPlay
+    muted
+    className="user-video-feed rounded-xl shadow-md border border-white/20 w-64 h-auto object-cover"
+  />
+
+  <button
+    onClick={detectMood}
+    className="px-6 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-md hover:scale-105 transition-transform"
+  >
+    Detect Face
+  </button>
+</div>
+
   );
 };
 

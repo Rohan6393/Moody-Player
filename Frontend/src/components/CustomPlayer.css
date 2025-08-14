@@ -1,0 +1,92 @@
+.custom-player {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background: #181818;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  gap: 15px;
+}
+
+.controls-left{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 2px;
+    
+}
+
+.controls-left button {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  cursor: pointer;
+  
+
+}
+
+.controls-left .play-btn {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.play-btn {
+  background: white;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.cover-art {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 2;
+}
+
+.progress-bar input[type="range"] {
+  flex: 1;
+  appearance: none;
+  height: 4px;
+  background: #535353;
+  border-radius: 2px;
+  outline: none;
+}
+
+.progress-bar input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.progress-bar input[type="range"]::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.controls-right svg {
+  margin-left: 8px;
+  cursor: pointer;
+}
