@@ -1,0 +1,25 @@
+/* Import a stylish Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@700&display=swap');
+
+.moody-heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #ff7e5f;
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.moody-heading span {
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  color: #feb47b;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

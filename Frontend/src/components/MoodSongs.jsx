@@ -14,7 +14,7 @@ const MoodSongs = ({ Songs }) => {
               song={{
                 title: song.title,
                 artist: song.artist,
-                cover: song.cover, // make sure Songs array has a cover image
+             // make sure Songs array has a cover image
                 audio: song.audio,
               }}
             />

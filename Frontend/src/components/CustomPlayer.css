@@ -9,30 +9,23 @@
   gap: 15px;
 }
 
-.controls-left{
-    /* border: 2px solid red; */
-    display: flex;
-    gap: 2px;
-    
+/* Left control buttons */
+.controls-left {
+  display: flex;
+  gap: 2px;
+  flex-shrink: 0; /* prevent shrinking */
 }
 
 .controls-left button {
   background: none;
   border: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 15px;
   cursor: pointer;
-  
-
 }
 
 .controls-left .play-btn {
-  background: none;
-  border: none;
-  color: rgb(255, 255, 255);
   font-size: 20px;
-  cursor: pointer;
-
 }
 
 .play-btn {
@@ -43,21 +36,26 @@
   font-size: 20px;
 }
 
+/* Cover art */
 .cover-art {
   width: 40px;
   height: 40px;
   border-radius: 6px;
 }
 
+/* Song info */
 .song-info {
-  flex: 1;
+  flex-shrink: 0; /* prevent taking extra space */
+  min-width: 120px;
 }
 
+/* Progress bar takes full middle space */
 .progress-bar {
   display: flex;
   align-items: center;
   gap: 8px;
-  flex: 2;
+  flex: 1; /* grow as much as possible */
+  min-width: 0; /* prevent overflow */
 }
 
 .progress-bar input[type="range"] {
@@ -86,7 +84,14 @@
   cursor: pointer;
 }
 
+/* Right controls */
+.controls-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
 .controls-right svg {
-  margin-left: 8px;
   cursor: pointer;
 }

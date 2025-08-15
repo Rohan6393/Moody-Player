@@ -64,19 +64,21 @@ const MoodDetector = ({ setSongs }) => {
   };
 
   return (
-    <div className="mood-element flex flex-col items-center gap-4 p-6 rounded-2xl bg-white/10 backdrop-blur-md shadow-lg max-w-sm">
-  <h2 className="text-2xl font-bold text-white">Mood: {currentMood}</h2>
+    
+    <div className="mood-element">
+      
+  <h2 className="">Mood: {currentMood}</h2>
 
   <video
     ref={videoRef}
     autoPlay
     muted
-    className="user-video-feed rounded-xl shadow-md border border-white/20 w-64 h-auto object-cover"
+    className="user-video-feed "
   />
 
   <button
     onClick={detectMood}
-    className="px-6 py-2 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold shadow-md hover:scale-105 transition-transform"
+    className=""
   >
     Detect Face
   </button>
