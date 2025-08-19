@@ -1,5 +1,5 @@
 // src/components/MoodDetector.js
-import React, { useEffect, useRef, useState } from "react";
+import React,{ useEffect, useRef, useState } from "react";
 import * as faceapi from "face-api.js";
 import moodToSongs from "../moodSongs";
 import "./MoodDetector.css";
@@ -53,7 +53,7 @@ const MoodDetector = ({ setSongs }) => {
 
         // 🔹 Fetch songs immediately using the new mood (not old state)
         axios
-          .get(`http://localhost:3000/songs?mood=${mood}`)
+          .get(`${import.meta.env.VITE_API_URL}/songs?mood=${mood}`)
           .then((response) => {
             console.log(response.data);
             setSongs(response.data?.song || []);
