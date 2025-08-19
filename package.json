@@ -2,9 +2,9 @@
   "name": "moody-player",
   "version": "1.0.0",
   "scripts": {
-    "install": "cd frontend && npm install && cd ../Backend && npm install",
-    "client:build": "cd frontend && npm run build",
-    "start": "cd Backend && node ../server.js"
+    "install": "cd Backend && npm install && cd frontend && npm install",
+    "build": "cd Backend/frontend && npm run build",
+    "start": "cd Backend && NODE_ENV=production node server.js"
   },
   "engines": {
     "node": "18.x"
