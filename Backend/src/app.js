@@ -1,5 +1,5 @@
 const express = require('express');
-const songRoutes = require('./routes/song.routes');
+const songRoutes = require('./routes/song.routes.js');
 const  cors = require('cors');
 
 const app = express();
