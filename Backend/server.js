@@ -6,9 +6,6 @@ const connectDB = require("./src/db/db");
 
 connectDB();
 
-// ✅ Pehle API routes define karo
-// app.use("/songs", require("./src/routes/songRoutes"));
-
 // ✅ Frontend serve sirf production me
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "frontend", "dist")));
